@@ -1,0 +1,47 @@
+﻿<Window x:Class="tut10TheGrid.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="350" Width="525">
+    <!--Sizing in wpf are 1>auto sizing(auto),2>proportionate sizing(*) (add hor and verti alignment to center)and 3>absolute sizing-->
+    <Grid ShowGridLines="True">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <!--to demonstrate auto sizing please place the textblock  and you can see how it is automatically placed-->
+        <TextBlock FontSize="80" VerticalAlignment="Center" HorizontalAlignment="center">X</TextBlock>
+        <TextBlock FontSize="80" Grid.Column="1" Grid.Row="1" HorizontalAlignment="center" VerticalAlignment="Center">Y</TextBlock>
+        <!--To demonstrate proprotional sizing replace auto to * and horizontal and vertical alignment to center mentioned in above code-->
+        <!--to show row span and column span attached to grid add a button to demo-->
+        <Button Grid.Column="1" Grid.RowSpan="2" ></Button> <!--how many rows you want to span, span 2 rows add to rowspan-->
+        <!--to resize the contents in the gridrows and columns we use grid splitter-->
+        <!--only be placed in a cell,resizes whole row/column not single cell,splitter has width of 0,always needs to give the width,HA and VA are key in -->
+        <!--determining how the grid splitter will be positioned.-->
+        <GridSplitter Width="5" HorizontalAlignment="right" Grid.Column="1"/>
+        <GridSplitter Width="20" VerticalAlignment="Top" Grid.Row="2" Background="Red"/>
+        <!-- to demonstrate grid with in the grid-->
+                <Grid Grid.Row="2" Grid.Column="2" ShowGridLines="True">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <TextBlock Grid.Row="0" Grid.Column="0" Padding="24,10,0,0">o</TextBlock>
+            <TextBlock Grid.Row="0" Grid.Column="1" Padding="24,10,0,0">x</TextBlock>
+            <TextBlock Grid.Row="1" Grid.Column="0" Padding="24,10,0,0">o</TextBlock>
+            <TextBlock Grid.Row="1" Grid.Column="1" Padding="24,10,0,0">x</TextBlock>
+            <TextBlock Grid.Row="2" Grid.Column="1" Padding="24,10,0,0">x</TextBlock>
+        </Grid>
+            </Grid>
+</Window>

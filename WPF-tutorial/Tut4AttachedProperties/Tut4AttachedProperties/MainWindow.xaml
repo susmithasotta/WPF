@@ -1,0 +1,19 @@
+﻿<Window x:Class="Tut4AttachedProperties.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <!--<Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>-->
+        <!--<Button Grid.Row="2">A button</Button>--> 
+       <!-- attaching button properties to grid-->
+        
+        <DockPanel LastChildFill="False">
+            <Button DockPanel.Dock="Top">Demo on attachiing properties of one control to Another control</Button>
+        </DockPanel>
+        <!--attaching button peroperties to -->
+    </Grid>
+</Window>

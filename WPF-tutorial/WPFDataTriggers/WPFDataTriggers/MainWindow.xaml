@@ -1,0 +1,24 @@
+﻿<Window x:Class="WPFDataTriggers.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:local="clr-namespace:WPFDataTriggers"
+        Title="MainWindow" Height="350" Width="525">
+    <Window.Resources>
+        <local:Users x:Key="MSUsers"></local:Users>
+        <!--datatype should have parameters datatype of type user-->
+        <DataTemplate DataType="{x:Type local:user}">
+                <TextBlock Text="{Binding Path=Name}"></TextBlock>
+        </DataTemplate>
+        <Style TargetType="{x:Type ListBoxItem}">
+            <Style.Triggers>
+                <DataTrigger Binding="{Binding Path=role}" Value="Admin">
+                    <Setter Property="Foreground" Value="Yellow"></Setter>
+                </DataTrigger>
+            </Style.Triggers>
+          </Style>
+       
+    </Window.Resources>
+    <Grid>
+        <ListBox Width="200" HorizontalAlignment="left" Height="100" ItemsSource="{Binding Source={StaticResource MSUsers}}"></ListBox>
+    </Grid>
+</Window>

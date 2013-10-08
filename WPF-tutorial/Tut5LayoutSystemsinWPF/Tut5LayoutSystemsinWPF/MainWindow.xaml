@@ -1,0 +1,46 @@
+﻿<Window x:Class="Tut5LayoutSystemsinWPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="299" Width="445">
+    <!--<Grid Grid.Row="2" Grid.Column="2" Height="254" Width="420">
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>-->
+        
+        <!--<StackPanel Grid.Column="1" Grid.Row="1" Background="Green" VerticalAlignment="Stretch" HorizontalAlignment="Stretch"/>-->
+        <!-- Demo1 ablove:element should not be in exact size,but should grow to fit their container-->
+        <!--<StackPanel>
+            <TextBlock FontSize="25">MoreSize cutoff</TextBlock>
+            <TextBlock FontSize="20">MoreSize cutoff</TextBlock>
+            <TextBlock FontSize="20">MoreSize cutoff</TextBlock>
+            <TextBlock FontSize="20">MoreSize cutoff</TextBlock>
+        </StackPanel>-->
+        <!-- Demo2 above:Layout container do their best to fit their children in the container at their requested dimension,if it cant the position that is big is cut off-->
+        
+        <!--DEmo3 above:Let the elements position themselves relative to other elements in container rather than using exact screen cordinates-->
+        <!--DEmo4 above:Layout containers can be nested to achive more complex layouts-->
+        
+    <Grid Background="blue">
+        <StackPanel MinWidth="150"  MaxWidth="250" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <TextBlock HorizontalAlignment="Center" Foreground="white" FontSize="20" Margin="0,0,0,5" Width="185">Sample Application</TextBlock>
+        
+        <StackPanel Orientation="Horizontal">
+            <TextBlock Foreground="White" FontSize="15" MinWidth="70">Email</TextBlock>
+            <TextBox HorizontalAlignment="Stretch" MinWidth="150" MaxWidth="200"></TextBox>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal">
+            <TextBlock Foreground="White" FontSize="15" MinWidth="70">Password</TextBlock>
+            <PasswordBox HorizontalAlignment="Stretch" MinWidth="150" MaxWidth="200" Height="70"></PasswordBox>
+        </StackPanel>
+        </StackPanel>
+    </Grid>
+</Window>

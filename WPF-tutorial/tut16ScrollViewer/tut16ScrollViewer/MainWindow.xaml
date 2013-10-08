@@ -1,0 +1,43 @@
+﻿<Window x:Class="tut16ScrollViewer.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <!--Keep in mind stack scroll will work container in scroll view implemets iscroll interface,stack panel is one among this-->
+        <ScrollViewer CanContentScroll="True" HorizontalScrollBarVisibility="Auto">
+            <!--cancontentscroll=true will set the scroll to scroll down one after the other means one by one-->
+            <!--to view horzontal scroll bar place the minwidth=525 which is windows min width-->
+        <StackPanel>
+            
+            <TextBlock MinWidth="525" FontSize="14" Foreground="white" Background="red" FontWeight="Bold">Text1</TextBlock>
+            <TextBlock FontSize="14" Foreground="white" Background="Black" FontWeight="Bold">Text2</TextBlock>
+            <TextBlock FontSize="14" Foreground="white" Background="Aquamarine" FontWeight="Bold">Text3</TextBlock>
+            <TextBlock FontSize="14" Foreground="white" Background="Azure" FontWeight="Bold">Text4</TextBlock>
+            <TextBlock FontSize="14" Foreground="white" Background="red" FontWeight="Bold">Text5</TextBlock>
+            <TextBlock FontSize="14" Foreground="white" Background="Black" FontWeight="Bold">Text6</TextBlock>
+            <TextBlock FontSize="14" Foreground="white" Background="Aquamarine" FontWeight="Bold">Text7</TextBlock>
+            <TextBlock FontSize="14" Foreground="white" Background="Azure" FontWeight="Bold">Text8</TextBlock>
+            <TextBlock FontSize="14" Foreground="white" Background="red" FontWeight="Bold">Text9</TextBlock>
+            <TextBlock FontSize="14" Foreground="white" Background="Black" FontWeight="Bold">Text10</TextBlock>
+            <TextBlock FontSize="14" Foreground="white" Background="Aquamarine" FontWeight="Bold">Text11</TextBlock>
+            <TextBlock FontSize="14" Foreground="white" Background="Azure" FontWeight="Bold">Text12</TextBlock>
+            <TextBlock FontSize="14" Foreground="white" Background="red" FontWeight="Bold">Text13</TextBlock>
+            <TextBlock FontSize="14" Foreground="white" Background="Black" FontWeight="Bold">Text14</TextBlock>
+            <TextBlock FontSize="14" Foreground="white" Background="Aquamarine" FontWeight="Bold">Text15</TextBlock>
+            <TextBlock FontSize="14" Foreground="white" Background="Azure" FontWeight="Bold">Text16</TextBlock>
+            <TextBlock FontSize="14" Foreground="white" Background="red" FontWeight="Bold">Text17</TextBlock>
+            <TextBlock FontSize="14" Foreground="white" Background="Black" FontWeight="Bold">Text18</TextBlock>
+            <TextBlock FontSize="14" Foreground="white" Background="Aquamarine" FontWeight="Bold">Text19</TextBlock>
+            <TextBlock FontSize="14" Foreground="white" Background="Azure" FontWeight="Bold">Text20</TextBlock>
+            <TextBlock FontSize="14" Foreground="white" Background="red" FontWeight="Bold">Text21</TextBlock>
+            <TextBlock FontSize="14" Foreground="white" Background="Black" FontWeight="Bold">Text22</TextBlock>
+            <TextBlock FontSize="14" Foreground="white" Background="Aquamarine" FontWeight="Bold">Text23</TextBlock>
+            <TextBlock FontSize="14" Foreground="white" Background="Azure" FontWeight="Bold">Text24</TextBlock>
+            <TextBlock FontSize="14" Foreground="white" Background="red" FontWeight="Bold">Text25</TextBlock>
+            <TextBlock FontSize="14" Foreground="white" Background="Black" FontWeight="Bold">Text26</TextBlock>
+            <TextBlock FontSize="14" Foreground="white" Background="Aquamarine" FontWeight="Bold">Text27</TextBlock>
+            <TextBlock FontSize="14" Foreground="white" Background="Azure" FontWeight="Bold">Text28</TextBlock>
+        </StackPanel>
+        </ScrollViewer>
+    </Grid>
+</Window>

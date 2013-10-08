@@ -1,0 +1,15 @@
+﻿<Window x:Class="tut15ContentControls.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <!-- textbox is not the content control no user interaction and label -yes,button-yes is alos content control-->
+        <!--see wpf tutorial:15 for figure and explanation-->
+        <Button x:Name="btn" MinHeight="50" MinWidth="50" HorizontalAlignment="center" VerticalAlignment="center" HorizontalContentAlignment="Stretch" Height="50" Margin="226,130,174,131" Width="103">
+            <StackPanel>
+                <TextBlock HorizontalAlignment="Center">Blue</TextBlock>
+                <Rectangle MinWidth="25" MinHeight="25" Fill="Red" Height="59"></Rectangle>
+            </StackPanel>
+        </Button>
+    </Grid>
+</Window>

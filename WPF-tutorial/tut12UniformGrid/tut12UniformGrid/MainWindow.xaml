@@ -1,0 +1,13 @@
+﻿<Window x:Class="tut12UniformGrid.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="350" Width="525">
+    <UniformGrid Rows="3" Columns="3" x:Name="checkerBoard">
+        <!--cells of same size-uniform grid-->
+        <Rectangle Fill="Black"/>
+        <Rectangle Fill="red"/>
+        <Rectangle Fill="red"/>
+        <Rectangle Fill="Black"/>
+        <!--suppode you want the uniofrm rows and colums of size=3 then add "Rows" and "Columns"parameters to uniform grid-->
+    </UniformGrid>
+</Window>

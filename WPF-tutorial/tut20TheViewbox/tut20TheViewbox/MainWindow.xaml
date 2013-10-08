@@ -1,0 +1,29 @@
+﻿<Window x:Class="tut20TheViewbox.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <!--to resize the contents -->
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <!--<Button Grid.Column="1" Grid.Row="1">
+            <TextBlock>Viewbox</TextBlock>
+        </Button>-->
+        <Button Grid.Column="1" Grid.Row="1">
+            <Viewbox>
+                <TextBlock>Viewbox</TextBlock>
+            </Viewbox>
+        </Button>
+        <!--text inside the textblock is not resized so place the textblock in viewbox and see-->
+<!--properties stretch direction=stretchdiretion=both and stretchdirection=downonly and strectchdirection=uponly and-->
+      <!--  stretch=none,fill,uniform and uniformtofill-->
+    </Grid>
+</Window>

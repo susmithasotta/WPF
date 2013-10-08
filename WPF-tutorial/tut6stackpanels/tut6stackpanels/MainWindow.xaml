@@ -1,0 +1,19 @@
+﻿<Window x:Class="tut6stackpanels.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <StackPanel>
+            <TextBlock FontSize="20" Margin="10,10,10,10">Sample Stackpanel Layout</TextBlock>
+            <RadioButton Margin="5,5,0,0">C#</RadioButton>
+            <RadioButton Margin="5,5,0,0">C++</RadioButton>
+            <RadioButton Margin="5,5,0,0">Java</RadioButton>
+            <RadioButton Margin="5,5,0,0">C++</RadioButton>
+            <RadioButton Margin="5,5,0,5">C</RadioButton>
+            <StackPanel Orientation="Horizontal">
+                <Button Margin="5">Vote</Button>
+                <Button Margin="5">View Results</Button>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Window>

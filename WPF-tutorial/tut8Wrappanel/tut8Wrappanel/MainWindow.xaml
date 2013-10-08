@@ -1,0 +1,31 @@
+﻿<Window x:Class="tut8Wrappanel.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <DockPanel LastChildFill="True">
+            <TextBlock FontSize="20" HorizontalAlignment="center" DockPanel.Dock="top">Wrappanel demo</TextBlock>
+            <TextBlock Width="300" TextWrapping="Wrap" Padding="3">
+                WPF employs XAML, a derivative of XML, to define and link various UI elements.[1] 
+                WPF applications can also be deployed as standalone desktop programs, or hosted as an embedded object in a website.
+                WPF aims to unify a number of common user interface elements, such as 2D/3D rendering, fixed and adaptive documents,
+                typography, vector graphics, runtime animation, and pre-rendered media. These elements can then be linked and manipulated 
+                based on various events, user interactions, and data bindings.
+            </TextBlock>
+            <WrapPanel>
+                <TextBlock FontWeight="Bold" Foreground="yellow" VerticalAlignment="Bottom">AJAX</TextBlock>
+                <TextBlock FontWeight="Bold" Foreground="yellow" VerticalAlignment="Bottom">C#</TextBlock>
+                <TextBlock FontWeight="Bold" Foreground="yellow" VerticalAlignment="Bottom">Linq</TextBlock>
+                <TextBlock FontWeight="Bold" Background="yellow" VerticalAlignment="Bottom">IIS</TextBlock>
+                <TextBlock FontWeight="Bold" FontSize="20" VerticalAlignment="Bottom">WPF</TextBlock>
+                <TextBlock FontWeight="Bold" Foreground="blue" VerticalAlignment="Bottom">WCF</TextBlock>
+                <TextBlock FontWeight="Bold" Foreground="Blue" VerticalAlignment="Bottom" Background="yellow">Silverlight</TextBlock>
+                <TextBlock FontSize="30" Foreground="yellow" VerticalAlignment="Bottom">Parsers</TextBlock>
+                <TextBlock FontWeight="Bold" Foreground="yellow" VerticalAlignment="Bottom">Sharepoint</TextBlock>
+                <TextBlock FontWeight="Bold" Background="yellow" VerticalAlignment="Bottom">SAS</TextBlock>
+                <TextBlock FontWeight="Bold" Background="Green" VerticalAlignment="Bottom">SSIS</TextBlock>
+                <TextBlock FontWeight="Bold" Foreground="yellow">SSRS</TextBlock>
+            </WrapPanel>
+        </DockPanel>
+    </Grid>
+</Window>
